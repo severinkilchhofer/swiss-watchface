@@ -41,7 +41,7 @@ const list = {
         {name: 'zwölf'},
         {name: 'drizäh'},
         {name: 'vierzäh'},
-        {name: 'füfzah'},
+        {name: 'füfzäh'},
         {name: 'sächzäh'},
         {name: 'siebzäh'},
         {name: 'achtzäh'},

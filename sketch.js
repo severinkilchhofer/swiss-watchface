@@ -12,11 +12,13 @@ function draw() {
     var min = minute();
     var h = hour();
 
+    // ZIITRAASE
     // textFont(myFont);
 
-    background(0, 0, 0, 12);
-    textSize(80);
-
+    background(0, 0, 0, 20);
+    textSize(12 + (mouseX / width)*72);
+    textLeading((mouseX / width) * 64);
+    textAlign(LEFT, BASELINE);
 
     if (h > 12) {
         fill(255, 255, 255, sec);
@@ -33,7 +35,7 @@ function draw() {
     }
 
     for (i = 0; i < sec; i++) { // Sekunden
-        text(list.minutenText[sec - 1].name, width/2, height/1.5, 70, 80);
+        text(list.minutenText[sec - 1].name, mouseX, height/1.5, 70, 80);
     }
 }
 
