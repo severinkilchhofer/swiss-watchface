@@ -1,10 +1,5 @@
-function preload() {
-    // myFont = loadFont('assets/FrederickatheGreat-Regular.otf');
-    // myFont = loadFont('assets/Merienda-Regular.otf');
-}
-
 function setup() {
-    createCanvas(windowWidth, windowHeight);//vollflaechig
+    createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -12,15 +7,13 @@ function draw() {
     var min = minute();
     var h = hour();
 
-    // ZIITRAASE
-    // textFont(myFont);
 
     background(0, 0, 0, 20);
     textSize(12 + (mouseX / width)*72);
     textLeading((mouseX / width) * 64);
     textAlign(LEFT, BASELINE);
 
-    if (h > 12) {
+    if (h > 6) {
         fill(255, 255, 255, sec);
     } else {
         fill(91, 201, 246);
